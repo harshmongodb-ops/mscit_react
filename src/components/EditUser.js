@@ -30,7 +30,7 @@ function EditUser() {
     if (!formData.phone.trim()) {
       newErrors.phone = 'Phone is required';
     } else if (!phoneRegex.test(formData.phone)) {
-      newErrors.phone = 'Phone must be 6 to 15 digits';
+      newErrors.phone = 'Phone must be 6 to 15 digitsjkhkjhkjhdgjhg';
     }
 
   
