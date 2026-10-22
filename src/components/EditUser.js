@@ -44,7 +44,7 @@ function EditUser() {
 
   const getuserDetail = async() => {
     try {
-        const response = await axios.get(`http://localhost:5000/api/get-singleuser/${id}`,{
+        const response = await axios.get(`https://mscit-backend-2u83.onrender.com/api/get-singleuser/${id}`,{
           headers:{
             "Content-Type":"Application/json",
             "Authorization":"Bearer "+token
@@ -74,7 +74,7 @@ function EditUser() {
     //console.log('Edit User Data:', formData);
     //API CALL
     try {
-        const response = await axios.put(`http://localhost:5000/api/update-user/${id}`,formData,{
+        const response = await axios.put(`https://mscit-backend-2u83.onrender.com/api/update-user/${id}`,formData,{
           headers:{
             "Content-Type":"Application/json",
             "Authorization":"Bearer "+token
